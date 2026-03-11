@@ -1,0 +1,14 @@
+{
+  "theme": {
+    "primaryColor": "#0B5FFF",
+    "secondaryColor": "#0F172A",
+    "accentColor": "#06B6D4",
+    "background": "#FFFFFF"
+  },
+  "fonts": {
+    "base": "Inter, Arial, sans-serif",
+    "heading": "Georgia, serif"
+  },
+  "language": "en",
+  "defaultPageSize": 20
+}
