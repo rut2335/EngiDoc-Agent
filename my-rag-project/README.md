@@ -71,3 +71,28 @@ Test the system's routing capabilities by asking the following questions in the 
 ### 💬 General Queries (Routed to Base LLM)
 * *"Hello, who are you?"*
 * *"Can you explain what a vector database is?"*
+
+
+graph TD
+    %% הגדרת צבעים ועיצוב לתיבות
+    classDef event fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000;
+    classDef step fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000;
+    classDef stop fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000;
+
+    %% תהליך הזרימה
+    Start((StartEvent<br/>שאילתת משתמש)):::event --> Ingest[ingest_and_validate]:::step
+    
+    Ingest -->|שאילתה ריקה| EndError((StopEvent<br/>שגיאה)):::stop
+    Ingest -->|RetrievedEvent| Validate[validate_results]:::step
+    
+    Validate -->|Confidence < 0.35| EndLow((StopEvent<br/>אין מידע מהימן)):::stop
+    Validate -->|Confidence 0.35-0.5| RetryEv(RetryRetrievalEvent):::event
+    
+    RetryEv --> Retry[handle_retry]:::step
+    Retry -->|שיפור שאילתה| Ingest
+    
+    Validate -->|Confidence > 0.5| ValidEv(ValidationEvent):::event
+    ValidEv --> Synth[synthesize]:::step
+    
+    Synth -->|בקשת JSON| EndJSON((StopEvent<br/>חילוץ מובנה)):::stop
+    Synth -->|בקשה רגילה| EndText((StopEvent<br/>תשובה טקסטואלית)):::stop
