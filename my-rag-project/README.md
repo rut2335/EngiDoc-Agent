@@ -72,7 +72,7 @@ Test the system's routing capabilities by asking the following questions in the 
 * *"Hello, who are you?"*
 * *"Can you explain what a vector database is?"*
 
-
+```mermaid
 graph TD
     %% הגדרת צבעים ועיצוב לתיבות
     classDef event fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000;
@@ -96,3 +96,4 @@ graph TD
     
     Synth -->|בקשת JSON| EndJSON((StopEvent<br/>חילוץ מובנה)):::stop
     Synth -->|בקשה רגילה| EndText((StopEvent<br/>תשובה טקסטואלית)):::stop
+    ```
