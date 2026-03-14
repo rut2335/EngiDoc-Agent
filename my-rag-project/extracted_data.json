@@ -1,76 +1,13 @@
-25 validation errors for ProjectDataSchema
-decisions.0
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='JWT (JSON Web Tokens)', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.1
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='RTL (Right-to-Left) layout', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.2
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='Ocean Blue (#0077be) + Assistant font', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.3
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='PostgreSQL Database Structure', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.4
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='FastAPI Application', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.5
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='API Endpoints', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.6
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='Data Models (SQLAlchemy)', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.7
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='Pydantic Schemas', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.8
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='CRUD Operations', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.9
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='Architecture Notes', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.10
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='Technical Stack', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-decisions.11
-  Input should be a valid dictionary or instance of DecisionItem [type=model_type, input_value='Current Limitations', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-rules.0
-  Input should be a valid dictionary or instance of RuleItem [type=model_type, input_value='Primary Color: Ocean Blue (#0077be)', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-rules.1
-  Input should be a valid dictionary or instance of RuleItem [type=model_type, input_value='Primary Font: Assistant', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-rules.2
-  Input should be a valid dictionary or instance of RuleItem [type=model_type, input_value='Database Connection: SQL...with session management', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-rules.3
-  Input should be a valid dictionary or instance of RuleItem [type=model_type, input_value='Error Handling: HTTP 404 for not found resources', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-rules.4
-  Input should be a valid dictionary or instance of RuleItem [type=model_type, input_value='Pagination: Implemented for book listing', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-rules.5
-  Input should be a valid dictionary or instance of RuleItem [type=model_type, input_value='Data Validation: Pydanti...est/response validation', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-rules.6
-  Input should be a valid dictionary or instance of RuleItem [type=model_type, input_value='Foreign Key Constraints:...e and set null policies', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-rules.7
-  Input should be a valid dictionary or instance of RuleItem [type=model_type, input_value='Indexing: Primary keys and ISBN field indexed', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-warnings.0
-  Input should be a valid dictionary or instance of WarningItem [type=model_type, input_value='Users are stored in-memory (not database-backed)', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-warnings.1
-  Input should be a valid dictionary or instance of WarningItem [type=model_type, input_value='No authentication/authorization', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-warnings.2
-  Input should be a valid dictionary or instance of WarningItem [type=model_type, input_value='No loan management endpoints implemented', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-warnings.3
-  Input should be a valid dictionary or instance of WarningItem [type=model_type, input_value='Limited error handling and logging', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
-warnings.4
-  Input should be a valid dictionary or instance of WarningItem [type=model_type, input_value='No API documentation customization', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+{
+  "decisions": [
+    {
+      "id": "d1",
+      "title": "JWT (JSON Web Tokens) for Authentication",
+      "summary": "Using JWT for stateless and secure authentication in the FastAPI backend, improving scalability and simplifying architecture.",
+      "file": "decisions.md",
+      "last_modified": "2026-03-14"
+    }
+  ],
+  "rules": [],
+  "warnings": []
+}
